@@ -10,7 +10,7 @@ interface ButtonLinkProps {
 
 const variantClasses = {
   primary:
-    'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-[0_0_30px_-6px_rgba(56,189,248,0.6)] hover:shadow-[0_0_45px_-4px_rgba(56,189,248,0.85)]',
+    'bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-[0_0_30px_-6px_rgba(220,38,38,0.6)] hover:shadow-[0_0_45px_-4px_rgba(220,38,38,0.85)]',
   secondary:
     'border border-white/15 bg-white/5 text-white hover:border-sky-400/50 hover:bg-sky-400/10',
 };

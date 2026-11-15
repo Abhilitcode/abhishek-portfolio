@@ -26,7 +26,7 @@ export default function Education() {
                     <p className="mt-1 text-sm text-slate-500">{item.period}</p>
                   </div>
                 </div>
-                <span className="inline-flex w-fit rounded-full border border-cyan-300/40 bg-cyan-300/10 px-5 py-2 font-display text-lg font-bold text-cyan-200 shadow-[0_0_24px_-6px_rgba(103,232,249,0.6)]">
+                <span className="inline-flex w-fit rounded-full border border-cyan-300/40 bg-cyan-300/10 px-5 py-2 font-display text-lg font-bold text-cyan-200 shadow-[0_0_24px_-6px_rgba(248,113,113,0.6)]">
                   {item.score}
                 </span>
               </div>

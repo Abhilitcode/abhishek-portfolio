@@ -14,7 +14,7 @@ export default function Experience() {
         {experience.map((item, index) => (
           <Reveal key={item.company} delay={index * 150}>
             <li className="relative mb-12 pl-8 md:pl-12 last:mb-0">
-              <span className="absolute -left-[9px] top-2 flex h-4 w-4 items-center justify-center rounded-full bg-navy-950 ring-2 ring-sky-400 shadow-[0_0_16px_rgba(56,189,248,0.8)]" />
+              <span className="absolute -left-[9px] top-2 flex h-4 w-4 items-center justify-center rounded-full bg-navy-950 ring-2 ring-sky-400 shadow-[0_0_16px_rgba(220,38,38,0.8)]" />
               <div className="glass-panel p-6 transition-colors duration-300 hover:border-sky-400/40 md:p-8">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div>
