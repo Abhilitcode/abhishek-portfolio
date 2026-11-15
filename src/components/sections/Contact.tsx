@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail, Terminal } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, Terminal } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import ButtonLink from '@/components/ui/ButtonLink';
 import Reveal from '@/components/ui/Reveal';
 import SectionHeading from '@/components/ui/SectionHeading';
 import TiltCard from '@/components/ui/TiltCard';
@@ -52,6 +53,9 @@ export default function Contact() {
                   </TiltCard>
                 </Reveal>
               ))}
+            </div>
+            <div className="mt-8 flex justify-center">
+              <ButtonLink href={profile.phoneHref} label={profile.phone} icon={Phone} variant="secondary" />
             </div>
           </div>
         </div>

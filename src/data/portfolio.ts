@@ -1,7 +1,6 @@
 import type { LucideIcon } from 'lucide-react';
 import { Bot, BrainCircuit, Cloud, Code2, Database, Layers } from 'lucide-react';
 
-// Replace the social URLs below with your real profile links.
 export const profile = {
   name: 'Abhishek Khale',
   title: 'AI/ML Engineer | Generative AI Developer',
@@ -9,9 +8,11 @@ export const profile = {
   intro:
     'Computer Engineering graduate passionate about building intelligent applications using Machine Learning, Large Language Models, Retrieval-Augmented Generation and Agentic AI. I enjoy turning complex ideas into practical, reliable AI solutions.',
   email: 'khaleabhishek351@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/your-profile',
-  github: 'https://github.com/your-username',
-  leetcode: 'https://leetcode.com/your-username',
+  phone: '+91 9326280951',
+  phoneHref: 'tel:+919326280951',
+  linkedin: 'https://www.linkedin.com/in/abhishek-khale/',
+  github: 'https://github.com/Abhilitcode',
+  leetcode: 'https://leetcode.com/Khale_Abhishek01/',
 };
 
 export const navLinks = [
@@ -123,6 +124,7 @@ export const projectCategories: ProjectCategory[] = ['Generative AI', 'Machine L
 export const projects: Project[] = [
   {
     title: 'Agentic Financial Planning & Simulation Platform',
+    repoUrl: 'https://github.com/Abhilitcode/amazon-financial-agent',
     category: 'Generative AI',
     points: [
       'Built an agentic financial planning assistant using GPT-5-mini and the Model Context Protocol.',
@@ -134,6 +136,7 @@ export const projects: Project[] = [
   },
   {
     title: 'AI-Assisted KYC Verification System',
+    repoUrl: 'https://github.com/Abhilitcode/video-kyc-ai-verification',
     category: 'Generative AI',
     points: [
       'Developed a KYC verification pipeline combining OCR, face verification, liveness detection and AI decision-making.',
@@ -145,6 +148,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Voice-Powered PDF Chatbot',
+    repoUrl: 'https://github.com/Abhilitcode/Voice_Powered_PDF_Chatbot',
     category: 'Generative AI',
     points: [
       'Built a RAG-based chatbot for querying PDF documents through text and voice.',
@@ -156,24 +160,28 @@ export const projects: Project[] = [
   },
   {
     title: 'Credit Risk Prediction',
+    repoUrl: 'https://github.com/Abhilitcode/Credit_Risk_Prediction',
     category: 'Machine Learning',
     points: ['Machine learning model for assessing credit risk and the likelihood of borrower default.'],
     stack: [],
   },
   {
     title: 'Term Deposit Forecasting',
+    repoUrl: 'https://github.com/Abhilitcode/Term-Deposit-Forecasting-in-Direct-Marketing',
     category: 'Machine Learning',
     points: ['Predictive model for forecasting term deposit subscription outcomes.'],
     stack: [],
   },
   {
     title: 'Loan Default Prediction',
+    repoUrl: 'https://github.com/Abhilitcode/LoanDefault_Prediction',
     category: 'Machine Learning',
     points: ['Machine learning model for predicting loan default risk.'],
     stack: [],
   },
   {
     title: 'Customer Subscription Propensity Prediction',
+    repoUrl: 'https://github.com/Abhilitcode/Customer-Short-Term-Subscription-Propensity-Prediction',
     category: 'Machine Learning',
     hackathon: true,
     points: ['Predicts how likely each customer is to subscribe, to guide targeting decisions.'],
@@ -181,6 +189,7 @@ export const projects: Project[] = [
   },
   {
     title: 'IMDb Movie Review Sentiment Analyzer',
+    repoUrl: 'https://github.com/Abhilitcode/IMDB_Movie_Review_Sentiment_Analyzer',
     category: 'Deep Learning',
     points: [
       'Built a sentiment analysis system using BiLSTM, dropout and EarlyStopping.',
@@ -191,6 +200,7 @@ export const projects: Project[] = [
   },
   {
     title: 'LanguageBuddy',
+    repoUrl: 'https://github.com/Abhilitcode/LanguageBuddy',
     category: 'Deep Learning',
     points: [
       'Created a multilingual language detection application supporting 19 languages.',
@@ -206,7 +216,7 @@ export interface ExperienceItem {
   company: string;
   role: string;
   period: string;
-  project: string;
+  project?: string;
   points: string[];
 }
 
@@ -235,6 +245,14 @@ export const experience: ExperienceItem[] = [
       'Worked using Agile methodologies.',
     ],
   },
+  {
+    company: 'Amazon ML Summer School 2023',
+    role: 'Machine Learning Apprenticeship',
+    period: 'September 2023 – October 2023',
+    points: [
+      'Selected for Amazon ML Summer School 2023, a learning programme covering Machine Learning fundamentals, Deep Neural Networks and Probabilistic Graphical Models.',
+    ],
+  },
 ];
 
 export interface EducationItem {
@@ -255,23 +273,34 @@ export const education: EducationItem[] = [
   },
 ];
 
-export interface CertificationItem {
+export interface CertificateDocument {
   title: string;
   issuer: string;
-  detail?: string;
+  date: string;
+  file: string;
+  courses?: string[];
 }
 
-export const certifications: CertificationItem[] = [
+export const certificates: CertificateDocument[] = [
   {
-    title: 'Amazon ML Summer School 2023',
-    issuer: 'Amazon',
-    detail:
-      'Covered supervised learning, deep neural networks, dimensionality reduction, unsupervised learning, probabilistic graphical models, sequential learning, causal inference and reinforcement learning.',
+    title: 'Certifications — Combined Certificate Collection',
+    issuer: 'LinkedIn Learning and AWS Training and Certification',
+    date: '2024',
+    file: '/Certifications.pdf',
+    courses: [
+      'Big Data in the Age of AI',
+      'Generative AI for Business Leaders',
+      'Inside the Mind of an Aspiring Data Scientist',
+      'Introduction to Prompt Engineering for Generative AI',
+      'What Is Generative AI?',
+      'Introduction to Generative AI (AWS)',
+      'Planning a Generative AI Project (AWS)',
+    ],
   },
-  { title: 'Python for Data Science and Machine Learning Bootcamp', issuer: 'Udemy · 25 hours' },
-  { title: 'Big Data in the Age of AI', issuer: 'LinkedIn Learning' },
-  { title: 'Introduction to Prompt Engineering for Generative AI', issuer: 'LinkedIn Learning' },
-  { title: 'Generative AI for Business Leaders', issuer: 'LinkedIn Learning' },
-  { title: 'Introduction to Generative AI', issuer: 'AWS Training and Certification' },
-  { title: 'Planning a Generative AI Project', issuer: 'AWS Training and Certification' },
+  {
+    title: 'Python for Data Science and Machine Learning Bootcamp',
+    issuer: 'Udemy · 25 hours',
+    date: 'December 2024',
+    file: '/Data_science_certificate.pdf',
+  },
 ];

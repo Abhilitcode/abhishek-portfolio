@@ -26,9 +26,11 @@ export default function Experience() {
                   </div>
                   <p className="text-sm text-slate-400">{item.period}</p>
                 </div>
-                <p className="mt-4 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
-                  Internship project: {item.project}
-                </p>
+                {item.project && (
+                  <p className="mt-4 inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300">
+                    Internship project: {item.project}
+                  </p>
+                )}
                 <ul className="mt-6 space-y-3">
                   {item.points.map((point) => (
                     <li key={point} className="flex gap-3 text-sm leading-relaxed text-slate-400 md:text-base">
