@@ -1,12 +1,19 @@
 import { ArrowRight, Mail } from 'lucide-react';
+import { useRef } from 'react';
 import ButtonLink from '@/components/ui/ButtonLink';
 import Reveal from '@/components/ui/Reveal';
 import { profile, heroStats } from '@/data/portfolio';
+import { usePointerParallax } from '@/hooks/usePointerParallax';
+import FeatherDrift from '@/components/visuals/FeatherDrift';
 import HeroVisual from './HeroVisual';
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  usePointerParallax(sectionRef);
+
   return (
-    <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section ref={sectionRef} id="home" className="relative flex min-h-screen items-center overflow-hidden pt-24">
+      <FeatherDrift />
       <div className="section-shell grid items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <Reveal>

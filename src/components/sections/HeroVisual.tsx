@@ -1,9 +1,11 @@
 import { profile } from '@/data/portfolio';
 import portrait from '@/assets/images/1789426064185.jpg';
 import AmbientParticles from '@/components/visuals/AmbientParticles';
+import CrowFlock from '@/components/visuals/CrowFlock';
 import GeometricRing from '@/components/visuals/GeometricRing';
 import NeuralNetwork from '@/components/visuals/NeuralNetwork';
 import RobotAssistant from '@/components/visuals/RobotAssistant';
+import SharinganEye from '@/components/visuals/SharinganEye';
 
 const orbits = [
   { size: 'h-[92%] w-[92%]', tilt: 'rotateX(70deg) rotateZ(10deg)', spin: 'animate-spin-slow', color: 'border-red-500/50' },
@@ -33,6 +35,15 @@ export default function HeroVisual() {
           </div>
         ))}
       </div>
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative aspect-square h-[72%] w-[72%]">
+          <div className="animate-pulse-glow absolute inset-0 rounded-full bg-red-600/30 blur-2xl" />
+          <SharinganEye className="animate-spin-slow absolute inset-0 h-full w-full drop-shadow-[0_0_18px_rgba(220,38,38,0.6)]" />
+        </div>
+      </div>
+
+      <CrowFlock />
 
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="animate-float relative aspect-square h-[48%] w-[48%] overflow-hidden rounded-full shadow-[0_0_60px_-10px_rgba(220,38,38,0.7)] ring-1 ring-red-500/50">
