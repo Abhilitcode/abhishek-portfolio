@@ -6,7 +6,7 @@ import NeuralNetwork from '@/components/visuals/NeuralNetwork';
 import RobotAssistant from '@/components/visuals/RobotAssistant';
 import SharinganEye from '@/components/visuals/SharinganEye';
 
-const portrait = '/assets/images/Gemini_Generated_Image_3jr7ey3jr7ey3jr7.png';
+import portrait from '@/assets/images/Cinematic_Sharingan_Portrait_Avatar.png';
 
 const orbits = [
   { size: 'h-[92%] w-[92%]', tilt: 'rotateX(70deg) rotateZ(10deg)', spin: 'animate-spin-slow', color: 'border-red-500/50' },
