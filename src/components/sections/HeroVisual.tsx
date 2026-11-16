@@ -1,11 +1,12 @@
 import { profile } from '@/data/portfolio';
-import portrait from '@/assets/images/1789426064185.jpg';
 import AmbientParticles from '@/components/visuals/AmbientParticles';
 import CrowFlock from '@/components/visuals/CrowFlock';
 import GeometricRing from '@/components/visuals/GeometricRing';
 import NeuralNetwork from '@/components/visuals/NeuralNetwork';
 import RobotAssistant from '@/components/visuals/RobotAssistant';
 import SharinganEye from '@/components/visuals/SharinganEye';
+
+const portrait = '/assets/images/Gemini_Generated_Image_3jr7ey3jr7ey3jr7.png';
 
 const orbits = [
   { size: 'h-[92%] w-[92%]', tilt: 'rotateX(70deg) rotateZ(10deg)', spin: 'animate-spin-slow', color: 'border-red-500/50' },
